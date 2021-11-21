@@ -43,6 +43,7 @@ class MainActivity : AppCompatActivity() {
 
         mBinding.bottomNav.setOnNavigationItemSelectedListener {
             when(it.itemId){
+
                 R.id.action_home -> {
                     mFragmentManager.beginTransaction().hide(mActiveFragment).show(homeFragment).commit()
                     mActiveFragment = homeFragment
